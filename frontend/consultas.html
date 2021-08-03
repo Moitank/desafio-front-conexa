@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="consultas.css" />
+    <link rel="stylesheet" href="modal.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <title>Consultas</title>
+  </head>
+  <body>
+    <header>
+      <img src="../images/logo-conexa.svg" alt="logo" />
+      <nav>
+        <h3>Olá, Dr. Gandalf</h3>
+        <button class="Btn-sair">Sair</button>
+      </nav>
+    </header>
+
+    <main>
+      <h1 class="Titulo">Consultas</h1>
+      <div class="Consultas-content">
+        <h3 class="Title-consultas">
+          <span id="Numero-consultas"> 3 </span>
+          Consultas Agendadas
+        </h3>
+
+        <div class="Consultas-container">
+          <div class="Consulta-individual">
+            <article class="Consulta-individual-article">
+              <p>Marcelo Marques Silva Moita</p>
+              <span>01/08/2021 as 17:00</span>
+            </article>
+            <button class="Btn-atender">Atender</button>
+          </div>
+          <div class="Consulta-individual">
+            <article class="Consulta-individual-article">
+              <p>Marcelo Marques Silva Moita</p>
+              <span>01/08/2021 as 17:00</span>
+            </article>
+            <button class="Btn-atender">Atender</button>
+          </div>
+          <div class="Consulta-individual">
+            <article class="Consulta-individual-article">
+              <p>Marcelo Marques Silva Moita</p>
+              <span>01/08/2021 as 17:00</span>
+            </article>
+            <button class="Btn-atender">Atender</button>
+          </div>
+          <div class="Consulta-individual">
+            <article class="Consulta-individual-article">
+              <p>Marcelo Marques Silva Moita</p>
+              <span>01/08/2021 as 17:00</span>
+            </article>
+            <button class="Btn-atender">Atender</button>
+          </div>
+          <div class="Consulta-individual">
+            <article class="Consulta-individual-article">
+              <p>Marcelo Marques Silva Moita</p>
+              <span>01/08/2021 as 17:00</span>
+            </article>
+            <button class="Btn-atender">Atender</button>
+          </div>
+          <div class="Consulta-individual">
+            <article class="Consulta-individual-article">
+              <p>Marcelo Marques Silva Moita</p>
+              <span>01/08/2021 as 17:00</span>
+            </article>
+            <button class="Btn-atender">Atender</button>
+          </div>
+          <div class="Consulta-individual">
+            <article class="Consulta-individual-article">
+              <p>Marcelo Marques Silva Moita</p>
+              <span>01/08/2021 as 17:00</span>
+            </article>
+            <button class="Btn-atender">Atender</button>
+          </div>
+          <div class="Consulta-individual">
+            <article class="Consulta-individual-article">
+              <p>Marcelo Marques Silva Moita</p>
+              <span>01/08/2021 as 17:00</span>
+            </article>
+            <button class="Btn-atender">Atender</button>
+          </div>
+          <div class="Consulta-individual">
+            <article class="Consulta-individual-article">
+              <p>Marcelo Marques Silva Moita</p>
+              <span>01/08/2021 as 17:00</span>
+            </article>
+            <button class="Btn-atender">Atender</button>
+          </div>
+          <div class="Consulta-individual">
+            <article class="Consulta-individual-article">
+              <p>Marcelo Marques Silva Moita</p>
+              <span>01/08/2021 as 17:00</span>
+            </article>
+            <button class="Btn-atender">Atender</button>
+          </div>
+          <div class="Consulta-individual">
+            <article class="Consulta-individual-article">
+              <p>Marcelo Marques Silva Moita</p>
+              <span>01/08/2021 as 17:00</span>
+            </article>
+            <button class="Btn-atender">Atender</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+        <button class="Btn-ajuda">Ajuda</button>
+        <button onclick="abrirModal()" class="Btn-agendar">Agendar Consulta</button>
+    </footer>
+
+    <section id="modal" class="Modal Invisivel">
+        <div class="Modal-content">
+            <header class="Header-modal">
+                <h2 class="Header-modal-title">Nova Consulta</h2>
+                <button onclick="fecharModal()" class="Btn-modal-x">X</button>
+            </header>
+
+            <main class="Main-modal">
+                <form class="Form-modal" action="">
+                    <fieldset class="Fieldset-modal">
+                        <label class="Label-modal" for="nome-paciente">Nome Completo</label>
+                        <input placeholder="Nome do paciente" id="nome-paciente" class="Input-modal" type="text">
+                    </fieldset>
+                    <fieldset class="Fieldset-modal">
+                        <label class="Label-modal" for="data">Data da Consulta</label>
+                        <input id="data" class="Input-modal" type="date">
+                    </fieldset>
+                    <fieldset class="Fieldset-modal">
+                        <label class="Label-modal" for="hora">Horário</label>
+                        <input  id="hora" class="Input-modal" type="time">
+                    </fieldset>
+                </form>
+            </main>
+
+            <footer class="Footer-modal">
+                <button onclick="fecharModal()" class="Btn-cancelar-modal">Cancelar</button>
+                <button class="Btn-salvar-modal">Salvar</button>
+            </footer>
+        </div>
+    </section>
+    <script src="./modal.js"></script>
+  </body>
+</html>

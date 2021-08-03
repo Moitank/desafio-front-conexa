@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #FFFFFB;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+header nav {
+    max-width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    
+}
+
+nav h3 {
+    margin-right: 15px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #575453;
+}
+
+.Btn-sair {
+    height: 32px;
+    width: 65px;
+    color: #2E50D4;
+    border: 2px solid #2E50D4;
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+main {
+    width: 100%;
+    height: 80vh;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #1C307F;
+    font-size: 52px;
+    line-height: 60px;
+    margin-left: 30px;
+}
+
+.Consultas-content {
+    width: 50%;
+    height: 90%;
+    margin: 0 auto;
+    
+    
+}
+
+.Title-consultas {
+    padding: 0 20px;
+    color: #575453;
+    font-weight: 700;
+    font-family: 'Nunito', sans-serif;
+}
+
+.Consultas-container {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 20px;
+    overflow-y: scroll;
+}
+
+.Consulta-individual {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #575453;
+    padding: 0 20px;
+    border-radius: 0 0 0 25px;
+}
+
+.Consulta-individual-article {
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: 'Nunito', sans-serif;
+    color: #575453;
+}
+
+.Consulta-individual-article p {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.Consulta-individual-article span {
+    font-size: 12px;
+    line-height: 20px;
+} 
+
+.Btn-atender {
+    width: 70px;
+    height: 35px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: #FFFFFF;
+    background-color: #2E50D4;
+    border-radius: 8px;
+    border: 0;
+    cursor: pointer;
+}
+
+footer {
+    width: 100%;
+    height: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.Btn-ajuda {
+    height: 32px;
+    width: 65px;
+    color: #2E50D4;
+    border: 2px solid #2E50D4;
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.Btn-agendar {
+    width: 140px;
+    height: 35px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: #FFFFFF;
+    background-color: #2E50D4;
+    border-radius: 8px;
+    border: 0;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 769px) {
+
+    nav h3 {
+        display: none;
+    }
+
+    .Consultas-content {
+        width: 100%;
+        height: 85%;
+    }
+
+    footer {
+        height: 15%;
+        border-top: 1px solid #DAD2D0;
+        
+    }
+}
+

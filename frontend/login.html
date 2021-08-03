@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="login.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <title>Login</title>
+  </head>
+  <body class="Container">
+    <header>
+      <img src="../images/logo-conexa.svg" alt="logo" />
+    </header>
+
+    <main class="Centro">
+      <section class="Imagem">
+        <h1 class="Titulo">Faça Login</h1>
+        <img src="../images/Frame 80.svg" alt="imagem" />
+      </section>
+      <form action="./consultas.html">
+        <fieldset>
+          <label for="email">E-mail</label>
+          <input id="email" placeholder="Digite seu e-mail" type="email" />
+        </fieldset>
+
+        <fieldset>
+          <label for="senha">Senha</label>
+          <input id="senha" placeholder="Digite sua senha" type="password" />
+        </fieldset>
+
+        <button id="entrar">Entrar</button>
+      </form>
+    </main>
+    <script src="./login.js"></script>
+    
+  </body>
+</html>
