@@ -131,28 +131,26 @@
             </header>
 
             <main class="Main-modal">
-                <form class="Form-modal" action="">
+                <form class="Form-modal">
                     <fieldset class="Fieldset-modal">
                         <label class="Label-modal" for="nome-paciente">Nome Completo</label>
-                        <input placeholder="Nome do paciente" id="nome-paciente" class="Input-modal" type="text">
+                        <input placeholder="Nome do paciente" id="nomePaciente" class="Input-modal" type="text">
                     </fieldset>
                     <fieldset class="Fieldset-modal">
-                        <label class="Label-modal" for="data">Data da Consulta</label>
-                        <input id="data" class="Input-modal" type="date">
+                        <label class="Label-modal" for="data">Data e Horário da Consulta</label>
+                        <input id="data" class="Input-modal" type="datetime-local">
                     </fieldset>
-                    <fieldset class="Fieldset-modal">
-                        <label class="Label-modal" for="hora">Horário</label>
-                        <input  id="hora" class="Input-modal" type="time">
-                    </fieldset>
+                   
                 </form>
             </main>
 
             <footer class="Footer-modal">
                 <button onclick="fecharModal()" class="Btn-cancelar-modal">Cancelar</button>
-                <button class="Btn-salvar-modal">Salvar</button>
+                <button type="submit" id="salvarConsulta" class="Btn-salvar-modal">Salvar</button>
             </footer>
         </div>
     </section>
     <script src="./modal.js"></script>
+    <script src="./consultas.js"></script>
   </body>
 </html>

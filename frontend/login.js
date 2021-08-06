@@ -21,10 +21,22 @@ function requisicao (email, senha) {
 
     fetch("http://localhost:3333/login", {
         method: "POST",
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+            },
+           
         body: JSON.stringify(data),
        
     })
     .then (response => response.json())
-    .then (res => console.log(res))
+    .then (data => {
+        const name = data.name
+        const token = data.token
+
+        localStorage.setItem("name", name)
+        localStorage.setItem("token", token)
+        console.log(token)
+    })
     .catch (error => console.log(error))
 }
